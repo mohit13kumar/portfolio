@@ -5,21 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="googlee87d2f74f632817c"> 
   <title>Mohit | Web Developer</title>
-  <!-- <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script> -->
-<!-- <script type="text/javascript">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
    (function(){
       emailjs.init({
         publicKey: "APGh_vIEHcOq1Nzs5",
       });
    })();
-</script> -->
+</script>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- mail sending area -->
-   <!-- <script>
+   <script>
             function sendMail(){
               let parms = {
                   name : document.getElementById('name').value,
@@ -28,7 +26,7 @@
               }
               emailjs.send("service_ll3y49d","template_wqjuzdt",parms).then(alert('email sent successfully')); 
             }
-  </script> -->
+  </script>
   <style>
     html {
       scroll-behavior: smooth;
@@ -188,7 +186,7 @@
           </div>
           <button
             type="button"
-            
+            onClick = "sendMail()"
             class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">
             Send Message
           </button>
