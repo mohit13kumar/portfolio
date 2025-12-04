@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="googlee87d2f74f632817c"> 
+  <title>Mohit | Web Developer</title>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "APGh_vIEHcOq1Nzs5",
+      });
+   })();
+</script>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- mail sending area -->
+   <script>
+            function sendMail(){
+              let parms = {
+                  name : document.getElementById('name').value,
+                  email : document.getElementById('email').value,
+                  message : document.getElementById('message').value
+              }
+              emailjs.send("service_ll3y49d","template_wqjuzdt",parms).then(alert('email sent successfully')); 
+            }
+          </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-900">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <nav class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 class="text-lg font-bold">Mohit</h1>
+      <div class="flex gap-4 text-sm">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4">
+
+    <!-- Hero -->
+    <section id="home" class="py-12 flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1">
+        <p class="text-sm text-blue-600 font-medium mb-2">Web Developer</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-3">
+          Hi, I'm <span class="text-blue-600">Mohit</span> 👋
+        </h2>
+        <p class="text-sm md:text-base text-slate-700 mb-4">
+          I am a web developer who loves building simple, clean and responsive websites.
+          I work on both frontend and backend using modern tools.
+        </p>
+        <div class="flex gap-3">
+          <a href="#projects" class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">
+            View Projects
+          </a>
+          <a href="#contact" class="border border-blue-600 text-blue-600 px-4 py-2 rounded text-sm hover:bg-blue-50">
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <div class="bg-white rounded-lg shadow p-4 text-sm">
+          <h3 class="font-semibold mb-2">About My Stack</h3>
+          <p class="text-slate-700 mb-1"><span class="font-semibold">Frontend:</span> HTML, CSS, JavaScript, Tailwind CSS</p>
+          <p class="text-slate-700 mb-1"><span class="font-semibold">Backend:</span> JavaScript, PHP, Laravel</p>
+          <p class="text-slate-700"><span class="font-semibold">Extra Knowledge:</span> C++, DSA, Python, Data Science and more...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-10">
+      <h2 class="text-2xl font-bold mb-3">About Me</h2>
+      <p class="text-sm md:text-base text-slate-700 mb-2">
+        I am Mohit, a web developer who enjoys creating websites and web applications that are
+        simple, user-friendly and responsive.
+      </p>
+      <p class="text-sm md:text-base text-slate-700">
+        I like working on both frontend and backend. I also focus on improving my problem-solving
+        skills using C++, DSA and Python. I am always learning new technologies and tools.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-10">
+      <h2 class="text-2xl font-bold mb-5">Skills</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
+        <!-- Frontend -->
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="font-semibold mb-2">Frontend</h3>
+          <ul class="list-disc list-inside text-slate-700">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <!-- Backend -->
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="font-semibold mb-2">Backend</h3>
+          <ul class="list-disc list-inside text-slate-700">
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Laravel</li>
+          </ul>
+        </div>
+
+        <!-- Extra Knowledge -->
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="font-semibold mb-2">Extra Knowledge</h3>
+          <ul class="list-disc list-inside text-slate-700">
+            <li>C++</li>
+            <li>DSA (Data Structures & Algorithms)</li>
+            <li>Python</li>
+            <li>Data Science (Basics)</li>
+            <li>And learning many more...</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-10">
+      <h2 class="text-2xl font-bold mb-5">Projects</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="font-semibold mb-1">Netflix Clone</h3>
+          <p class="text-slate-700">
+            A Simple Cloning practice on Netflix landing page. Working With Html and Css
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="font-semibold mb-1">Personal Portfolio</h3>
+          <p class="text-slate-700">
+            A responsive portfolio website built with HTML, Tailwind CSS and JavaScript.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-4">
+          <h3 class="font-semibold mb-1">Data Dashboard (Basic)</h3>
+          <p class="text-slate-700">
+            A simple dashboard that shows data using JavaScript and basic data science concepts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-10">
+      <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+      <p class="text-sm md:text-base text-slate-700 mb-4">
+        If you want to work with me or have any questions, feel free to send me a message.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <form class="bg-white rounded-lg shadow p-4 space-y-3">
+          <div>
+            <label class="block text-slate-700 mb-1 text-sm" for="name">Name</label>
+            <input id="name" type="text" class="w-full border rounded px-3 py-2 text-sm" placeholder="Your name">
+          </div>
+          <div>
+            <label class="block text-slate-700 mb-1 text-sm" for="email">Email</label>
+            <input id="email" type="email" class="w-full border rounded px-3 py-2 text-sm" placeholder="you@example.com">
+          </div>
+          <div>
+            <label class="block text-slate-700 mb-1 text-sm" for="message">Message</label>
+            <textarea id="message" rows="4" class="w-full border rounded px-3 py-2 text-sm" placeholder="Your message"></textarea>
+          </div>
+          <button
+            type="button"
+            onclick="sendMail()"
+            class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">
+            Send Message
+          </button>
+
+        </form>
+
+        <div class="space-y-4">
+          <div class="bg-white rounded-lg shadow p-4">
+            <h3 class="font-semibold mb-2">Email</h3>
+            <p class="text-slate-700">kumarmohit931161@gmail.com</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow p-4">
+            <h3 class="font-semibold mb-2">Social Links</h3>
+            <p class="text-slate-700">GitHub: <a href="https://github.com/mohit13kumar" class="text-blue-600">@mohit13kumar-github</a></p>
+            <p class="text-slate-700">LinkedIn: <a href="https://www.linkedin.com/in/mohit-kumar-043959225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-blue-600">@mohit-kumar-linkedin</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-8">
+    <div class="max-w-5xl mx-auto px-4 py-4 text-xs text-slate-600 flex flex-col md:flex-row items-center justify-between gap-2">
+      <p>© <span id="year"></span> Mohit. All rights reserved.</p>
+      <p>Built with HTML, Tailwind CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Simple JavaScript -->
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
